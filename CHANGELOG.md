@@ -12,6 +12,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 > **Note:** This file is automatically maintained by [release-please](https://github.com/googleapis/release-please). Do not edit manually.
 
+## [3.4.0](https://github.com/microsoft/hve-core/compare/hve-core-v3.3.41...hve-core-v3.4.0) (2026-04-17)
+
+
+### ✨ Features
+
+* **1004:** add OutputPath parameter to Invoke-LinkLanguageCheck.ps1 ([#1229](https://github.com/microsoft/hve-core/issues/1229)) ([2aad98e](https://github.com/microsoft/hve-core/commit/2aad98e09bbf235412f9b74eaa9b32d7f611e53e))
+* add -OutputPath parameter to Validate-SkillStructure.ps1 ([#1225](https://github.com/microsoft/hve-core/issues/1225)) ([d1e0b35](https://github.com/microsoft/hve-core/commit/d1e0b358373831557e954a8162bb8fb21ed9b133))
+* **agents:** replace hve-core-specific references with portable discovery-based language ([#1335](https://github.com/microsoft/hve-core/issues/1335)) ([ef520df](https://github.com/microsoft/hve-core/commit/ef520dfba857b3c1625e22efe4e955ff257a4932))
+* **docs:** add extension collections overview and integrate into getting started flow ([#950](https://github.com/microsoft/hve-core/issues/950)) ([b6fa2aa](https://github.com/microsoft/hve-core/commit/b6fa2aa064692616597e7961e9c87d53dd25a7ba))
+* **skill:** introduce `owasp-cicd` ([#1246](https://github.com/microsoft/hve-core/issues/1246)) ([a3acef3](https://github.com/microsoft/hve-core/commit/a3acef32dec8d8ac8051793df3686007a92266cd))
+* **skill:** introduce `owasp-infrastructure` ([#1244](https://github.com/microsoft/hve-core/issues/1244)) ([024f61f](https://github.com/microsoft/hve-core/commit/024f61f4838529c781fbd02601f886d78125428d))
+* **skill:** introduce `owasp-mcp` ([#1207](https://github.com/microsoft/hve-core/issues/1207)) ([dfd04e0](https://github.com/microsoft/hve-core/commit/dfd04e0e1c80ddc5999d94a3b66e09fcdf961c09))
+* **skills:** add secure-by-design knowledge skill ([#1223](https://github.com/microsoft/hve-core/issues/1223)) ([a18ab1a](https://github.com/microsoft/hve-core/commit/a18ab1a81ed6486d916f68349fb6764526511aea))
+* **workflows:** add maintainer-only skip-review label guard ([#1293](https://github.com/microsoft/hve-core/issues/1293)) ([6e4ea2e](https://github.com/microsoft/hve-core/commit/6e4ea2e940077ceb57b64c50b0894175db58c41b))
+
+
+### 🐛 Bug Fixes
+
+* **agents:** add parallel subagent dispatch and structured JSON contracts to code-review-full ([#1304](https://github.com/microsoft/hve-core/issues/1304)) ([06df9d2](https://github.com/microsoft/hve-core/commit/06df9d2820e2c050f995a5fb9ceeb397406d5cb6))
+* **agents:** fix plugin compatibility and robustness for coding-standards code review agents ([#1289](https://github.com/microsoft/hve-core/issues/1289)) ([8319d10](https://github.com/microsoft/hve-core/commit/8319d1012068e2fbef8127c9fd3c7b10ac61e84e))
+* **build:** pin basic-ftp to 5.3.0 to resolve GHSA-rp42-5vxx-qpwr ([#1374](https://github.com/microsoft/hve-core/issues/1374)) ([4adb608](https://github.com/microsoft/hve-core/commit/4adb60831e41b41c561d2d0da21a321c01c42d94))
+* **ci:** add synchronize trigger to PR Review workflow ([#1323](https://github.com/microsoft/hve-core/issues/1323)) ([060f64d](https://github.com/microsoft/hve-core/commit/060f64dd4fe398817170fdf37c1707421520f640))
+* **docs:** derive collection artifact counts from YAML at build time ([#1275](https://github.com/microsoft/hve-core/issues/1275)) ([0c30bad](https://github.com/microsoft/hve-core/commit/0c30bad89caed1ba7589ed60a8020a0decf599d2))
+* **docs:** escape hyphens in Mermaid diagram on Collections page ([#1262](https://github.com/microsoft/hve-core/issues/1262)) ([ce0e531](https://github.com/microsoft/hve-core/commit/ce0e531b320fdd22b6fa2728d75e56732496f1a4))
+* **linting:** add summary timestamp to PSScriptAnalyzer output ([#1211](https://github.com/microsoft/hve-core/issues/1211)) ([0da852f](https://github.com/microsoft/hve-core/commit/0da852f3afdc172f0bef276102dfb279f9888bf4))
+* **scripts:** standardize timestamp in FrontmatterValidation.psm1 to use Get-StandardTimestamp ([#1285](https://github.com/microsoft/hve-core/issues/1285)) ([98dcee4](https://github.com/microsoft/hve-core/commit/98dcee4c37cbab89772e707cf6bc167feb1798c9))
+* **scripts:** standardize timestamp in Invoke-LinkLanguageCheck.ps1 to use Get-StandardTimestamp ([#1264](https://github.com/microsoft/hve-core/issues/1264)) ([dd2ae45](https://github.com/microsoft/hve-core/commit/dd2ae45600e974f614f1f74508298f0ac27726ff))
+* **scripts:** standardize timestamp in Invoke-YamlLint.ps1 to use Get-StandardTimestamp ([#1270](https://github.com/microsoft/hve-core/issues/1270)) ([11a483f](https://github.com/microsoft/hve-core/commit/11a483f48415d96bb67e38a25007a53450895f76))
+* **scripts:** standardize timestamp in Markdown-Link-Check.ps1 to use Get-StandardTimestamp ([#1283](https://github.com/microsoft/hve-core/issues/1283)) ([d140f13](https://github.com/microsoft/hve-core/commit/d140f13bde2354228965f9d35cf42dc7466ef3b3))
+* **scripts:** standardize timestamp in SecurityHelpers.psm1 to use Get-StandardTimestamp ([#1284](https://github.com/microsoft/hve-core/issues/1284)) ([07bd2ab](https://github.com/microsoft/hve-core/commit/07bd2ab86c8c9b6ec1e1945e4a2142e11e063763))
+* **scripts:** standardize timestamp in Test-CopyrightHeaders.ps1 to use Get-StandardTimestamp ([#1278](https://github.com/microsoft/hve-core/issues/1278)) ([84ddd5d](https://github.com/microsoft/hve-core/commit/84ddd5d6149871c41b04f7d11da6045feb151e20))
+* **scripts:** standardize timestamp in Validate-SkillStructure.ps1 to use Get-StandardTimestamp ([#1280](https://github.com/microsoft/hve-core/issues/1280)) ([a1928f3](https://github.com/microsoft/hve-core/commit/a1928f3d68954e890e6142ba514b00b44139470f))
+* **scripts:** standardize Timestamp JSON key casing across all lint result files ([#1314](https://github.com/microsoft/hve-core/issues/1314)) ([f7f43d3](https://github.com/microsoft/hve-core/commit/f7f43d31ad9dedb4dc6da0f01c27480a15ad5a97))
+* **scripts:** standardize timestamps in Test-DependencyPinning.ps1 and SecurityClasses.psm1 ([#1282](https://github.com/microsoft/hve-core/issues/1282)) ([65837ff](https://github.com/microsoft/hve-core/commit/65837ff5c281898adbcf615b248f667a28366e1b))
+* **skills:** resolve pip-audit findings in powerpoint, gitlab, and jira skill lock files ([#1360](https://github.com/microsoft/hve-core/issues/1360)) ([2ccede8](https://github.com/microsoft/hve-core/commit/2ccede8bf0096ea50b84c7c48f5a4594148ea946))
+* update stale documentation date in release-process.md ([#1363](https://github.com/microsoft/hve-core/issues/1363)) ([29a2df1](https://github.com/microsoft/hve-core/commit/29a2df1b720ddaedd1e328c0c119550bfff52a86))
+* **workflows:** add bot filter to dependency PR review workflow ([#1362](https://github.com/microsoft/hve-core/issues/1362)) ([598f8da](https://github.com/microsoft/hve-core/commit/598f8daa8cf56857428dccd6bbbd02490819a713))
+* **workflows:** fix dependency-review path filters and sparse-checkout cone mode ([#1259](https://github.com/microsoft/hve-core/issues/1259)) ([8722d8f](https://github.com/microsoft/hve-core/commit/8722d8f84cb5df2e0c99f670310da007a343a26e))
+
+
+### 🔧 Maintenance
+
+* **build:** upgrade Node.js from 20 to 24 and bump cspell to v10 ([#1353](https://github.com/microsoft/hve-core/issues/1353)) ([402c9e5](https://github.com/microsoft/hve-core/commit/402c9e5aa3f862b2b1597016594bc6145d788386))
+* **deps-dev:** bump basic-ftp from 5.2.0 to 5.2.1 ([#1324](https://github.com/microsoft/hve-core/issues/1324)) ([057c691](https://github.com/microsoft/hve-core/commit/057c691e5ae38a79f5102e58e786515964946532))
+* **deps-dev:** bump the npm-dependencies group with 2 updates ([#1297](https://github.com/microsoft/hve-core/issues/1297)) ([bcc2e84](https://github.com/microsoft/hve-core/commit/bcc2e84df7c0f8c522a170fe2b9ef8a5335723ce))
+* **deps:** bump follow-redirects from 1.15.11 to 1.16.0 in /docs/docusaurus ([#1356](https://github.com/microsoft/hve-core/issues/1356)) ([3aded28](https://github.com/microsoft/hve-core/commit/3aded284985d2e55d02420cf183f33a299c6ad6d))
+* **deps:** update github/gh-aw-actions requirement to 536ea1bad8c6715d098a9dc1afea8d403733acfe in the github-actions group across 1 directory ([#1298](https://github.com/microsoft/hve-core/issues/1298)) ([812569b](https://github.com/microsoft/hve-core/commit/812569bc945dcd98e9d6f7e659cd5363a83ca834))
+* **licensing:** update security instruction attributions and compliance ([#1294](https://github.com/microsoft/hve-core/issues/1294)) ([1dca623](https://github.com/microsoft/hve-core/commit/1dca6230ba23d71531cfc82f0810c372308ff3da))
+
 ## [3.2.2](https://github.com/microsoft/hve-core/compare/hve-core-v3.2.1...hve-core-v3.2.2) (2026-03-23)
 
 
